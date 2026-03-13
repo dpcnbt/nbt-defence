@@ -103,6 +103,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .testimonial-quote{font-size:.95rem;color:var(--text);line-height:1.8;font-weight:300;font-style:italic;margin-bottom:2rem;position:relative;padding-top:1.5rem}
 .testimonial-quote::before{content:'\201C';font-family:var(--display);font-size:5rem;color:var(--accent);opacity:.2;position:absolute;top:-1.5rem;left:-.5rem;line-height:1}
 .testimonial-author{display:flex;align-items:center;gap:1rem}
+.client-logos{display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--border)}
+.client-logo-item{width:140px;height:60px;background:var(--border);opacity:.4;display:flex;align-items:center;justify-content:center;transition:opacity .3s}
+.client-logo-item:hover{opacity:.8}
+.client-logo-item img{width:100%;height:100%;object-fit:contain;filter:brightness(0) invert(1)}
 .author-avatar{width:40px;height:40px;background:var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.1rem;color:var(--accent)}
 .author-name{font-weight:600;font-size:.88rem;color:var(--white)}
 .author-role{font-family:var(--mono);font-size:.65rem;color:var(--dim);letter-spacing:.08em}
@@ -330,8 +334,9 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:4rem}
 </section>
 
 <section class="testimonial-section">
-  <div class="section-label">// Client Outcomes</div>
+  <div class="section-label">// Who We Support</div>
   <h2 class="section-title">TRUSTED BY<br>THE BUILDERS.</h2>
+  <!--
   <div class="testimonials-grid reveal">
     <div class="testimonial-card">
       <div class="testimonial-quote">They got us to Cyber Essentials Plus in five weeks — right before our MOD tender submission. Without them, we'd have missed the bid entirely. That single contract was worth £2.4M to us.</div>
@@ -345,6 +350,14 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:4rem}
       <div class="testimonial-quote">Our investors required a full security audit before our Series B close. Nova Blue delivered a board-ready assessment in three weeks that gave investors the confidence they needed. The round closed on time.</div>
       <div class="testimonial-author"><div class="author-avatar">AL</div><div><div class="author-name">Amy L.</div><div class="author-role">Founder — Defence AI Platform, Pre-Series B</div></div></div>
     </div>
+  </div>
+  -->
+  <div class="client-logos reveal">
+    <div class="client-logo-item"><img src="images/client-logo-1.png" alt="Client logo"></div>
+    <div class="client-logo-item"><img src="images/client-logo-2.png" alt="Client logo"></div>
+    <div class="client-logo-item"><img src="images/client-logo-3.png" alt="Client logo"></div>
+    <div class="client-logo-item"><img src="images/client-logo-4.png" alt="Client logo"></div>
+    <div class="client-logo-item"><img src="images/client-logo-5.png" alt="Client logo"></div>
   </div>
 </section>
 
