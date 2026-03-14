@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:\\\\Users\\\\DavidCollins\\\\OneDrive - Nova Blue Technologies\\\\Document Storage\\\\R&D\\\\Claude\\\\Defence Website\")",
+      "Bash(wc -l \"C:\\\\Users\\\\DavidCollins\\\\OneDrive - Nova Blue Technologies\\\\Document Storage\\\\R&D\\\\Claude\\\\Defence Website\\\\defence-cyber.html\")",
+      "Bash(tail -50 \"C:\\\\Users\\\\DavidCollins\\\\OneDrive - Nova Blue Technologies\\\\Document Storage\\\\R&D\\\\Claude\\\\Defence Website\\\\defence-cyber.html\")",
+      "Bash(python3 -:*)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
