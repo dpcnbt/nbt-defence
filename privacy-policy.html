@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Nova Blue Defence Cybersecurity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0e1228;--deep:#161b33;--panel:#1e2540;--border:#2a3356;
+  --accent:#deb841;--accent2:#6883ba;--text:#c8d0e0;--dim:#6883ba;--white:#fefefe;
+  --mono:'DM Mono',monospace;--display:'Bebas Neue',sans-serif;--body:'Barlow',sans-serif;
+}
+body{background:var(--black);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;overflow-x:hidden}
+
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 4rem;background:rgba(22,27,51,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.nav-logo-text{font-family:var(--display);font-size:1.4rem;letter-spacing:.08em;color:var(--white);position:relative;top:2px}
+.nav-logo-text span{color:var(--accent)}
+.nav-badge{font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;color:var(--accent);border:1px solid var(--accent);padding:.15rem .5rem;margin-left:.5rem;opacity:.8}
+.nav-links{list-style:none;display:flex;align-items:center;gap:2.5rem}
+.nav-links a{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--text);text-decoration:none;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{color:var(--black)!important;background:var(--accent);padding:.55rem 1.2rem!important;transition:all .2s!important}
+.nav-cta:hover{background:var(--white)!important}
+
+/* Page */
+.policy-wrap{max-width:780px;margin:0 auto;padding:9rem 2rem 6rem}
+.policy-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:1.5rem}
+.policy-title{font-family:var(--display);font-size:3.5rem;letter-spacing:.04em;color:var(--white);line-height:1;margin-bottom:.75rem}
+.policy-updated{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--dim);margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+.policy-section{margin-bottom:2.5rem}
+.policy-section h2{font-family:var(--mono);font-size:.8rem;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.9rem;padding-top:2.5rem;border-top:1px solid var(--border)}
+.policy-section p{font-size:.95rem;color:var(--text);line-height:1.8;font-weight:300;margin-bottom:.9rem}
+.policy-section ul{margin:.5rem 0 .9rem 1.5rem;display:flex;flex-direction:column;gap:.4rem}
+.policy-section li{font-size:.95rem;color:var(--text);line-height:1.7;font-weight:300}
+.policy-section a{color:var(--accent);text-decoration:underline}
+.policy-section strong{color:var(--white);font-weight:500}
+.policy-table{width:100%;border-collapse:collapse;margin:.75rem 0 1rem;font-size:.88rem}
+.policy-table th{font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-align:left;padding:.6rem 1rem;border-bottom:1px solid var(--border)}
+.policy-table td{padding:.7rem 1rem;border-bottom:1px solid rgba(42,51,86,.5);color:var(--text);font-weight:300;line-height:1.6;vertical-align:top}
+.policy-table tr:last-child td{border-bottom:none}
+
+/* Footer */
+footer{background:var(--black);border-top:1px solid var(--border);padding:2rem 4rem}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-family:var(--mono);font-size:.65rem;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+.footer-badges{display:flex;align-items:center;gap:1rem}
+.ads-logo{height:40px;opacity:.7;filter:brightness(0) invert(1);transition:opacity .2s}
+.ads-logo:hover{opacity:1}
+
+/* Cookie banner */
+#cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--deep);border-top:1px solid var(--border);padding:1.1rem 4rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;transform:translateY(100%);transition:transform .4s ease}
+#cookie-banner.visible{transform:translateY(0)}
+#cookie-banner p{font-family:var(--body);font-size:.82rem;color:var(--dim);line-height:1.5;max-width:680px}
+#cookie-banner a{color:var(--accent);text-decoration:underline}
+.cookie-actions{display:flex;gap:.75rem;flex-shrink:0}
+.cookie-btn{font-family:var(--mono);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;padding:.55rem 1.2rem;border:none;cursor:pointer;transition:all .2s}
+.cookie-btn-accept{background:var(--accent);color:var(--black)}
+.cookie-btn-accept:hover{background:var(--white)}
+.cookie-btn-decline{background:transparent;color:var(--dim);border:1px solid var(--border)}
+.cookie-btn-decline:hover{border-color:var(--dim);color:var(--text)}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .policy-wrap{padding:7rem 1.5rem 4rem}
+  .policy-title{font-size:2.5rem}
+  footer{padding:2rem 1.5rem}
+  .footer-bottom{flex-direction:column;gap:1.5rem;align-items:flex-start}
+  #cookie-banner{flex-direction:column;align-items:flex-start;padding:1.5rem}
+  .cookie-actions{width:100%}
+  .cookie-btn{flex:1;text-align:center}
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">NOVABLUE-1497238743-20035</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">04f69023-0e36-4a61-bdaa-78383fad7a43</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://novabluetech.sharepoint.com/sites/NovaOps/_layouts/15/DocIdRedir.aspx?ID=NOVABLUE-1497238743-20035, NOVABLUE-1497238743-20035</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+<nav>
+  <div style="display:flex;align-items:center;gap:.75rem">
+    <a href="https://www.nova-blue.com" class="nav-logo">
+      <img src="images/logo.png" alt="Nova Blue" style="height:36px;">
+      <span class="nav-logo-text">NOVA <span>BLUE</span></span>
+    </a>
+    <a href="/index.html" class="nav-badge" style="text-decoration:none">DEFENCE</a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#threats">Threat Landscape</a></li>
+    <li><a href="/#compliance">Compliance</a></li>
+    <li><a href="/#about">Why Us</a></li>
+    <li><a href="/#contact" class="nav-cta">Get Assessment</a></li>
+  </ul>
+</nav>
+
+<div class="policy-wrap">
+
+  <div class="policy-label">// Legal</div>
+  <h1 class="policy-title">PRIVACY POLICY</h1>
+  <p class="policy-updated">Last updated: March 2026</p>
+
+  <div class="policy-section">
+    <h2>1. Who We Are</h2>
+    <p><strong>Nova Blue Technologies Ltd</strong> is registered in England and Wales. We operate the website at <a href="https://www.nova-blue.com">www.nova-blue.com</a> and provide defence cybersecurity services to UK and allied defence sector organisations.</p>
+    <p>For the purposes of UK GDPR, Nova Blue Technologies Ltd is the data controller. If you have any questions about how we handle your personal data, please contact us at <a href="mailto:notices@nova-blue.com">notices@nova-blue.com</a>.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>2. What Data We Collect and Why</h2>
+    <table class="policy-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Source</th>
+          <th>Purpose</th>
+          <th>Legal Basis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name, job title, company, work email</td>
+          <td>Assessment request form</td>
+          <td>To respond to your enquiry and arrange your free assessment</td>
+          <td>Legitimate interests / Pre-contractual steps</td>
+        </tr>
+        <tr>
+          <td>Company stage, primary concern, additional context</td>
+          <td>Assessment request form</td>
+          <td>To tailor our response to your specific situation</td>
+          <td>Legitimate interests</td>
+        </tr>
+        <tr>
+          <td>IP address</td>
+          <td>Google Fonts (automatic on page load)</td>
+          <td>Font delivery — your browser contacts Google's servers to load typefaces used on this site</td>
+          <td>Legitimate interests</td>
+        </tr>
+        <tr>
+          <td>Cookie consent preference</td>
+          <td>Cookie banner (stored locally in your browser)</td>
+          <td>To remember whether you have accepted or declined non-essential cookies</td>
+          <td>Legal obligation / Legitimate interests</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do not use advertising cookies, tracking pixels, or behavioural analytics tools. We do not sell or share your personal data with third parties for marketing purposes.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>3. Third-Party Services</h2>
+    <p><strong>Google Fonts</strong> — This site loads fonts from Google's servers. When your browser requests a font, your IP address is transmitted to Google. This is a standard technical process. Google's privacy policy is available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    <p><strong>Blockmark Tech</strong> — Our certification badges are served via iframes from registry.blockmarktech.com. Blockmark may process your IP address when these widgets load. Their privacy policy is available on their website at <a href="https://blockmarktech.com" target="_blank" rel="noopener">blockmarktech.com</a>.</p>
+    <p><strong>Calendly / Booking system</strong> — If you use our booking link to schedule a call, you will be directed to a third-party booking platform. Their own privacy policy applies from that point.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>4. Cookies</h2>
+    <p>We use a single first-party cookie preference stored in your browser's <strong>localStorage</strong> to remember your cookie consent choice. This is not a tracking cookie and does not leave your device.</p>
+    <p>If we introduce analytics or other cookies in future, we will update this policy and request your consent via the cookie banner before any such cookies are set.</p>
+    <p>You can clear your stored preferences at any time by clearing your browser's local storage or site data.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>5. How Long We Keep Your Data</h2>
+    <p>Data submitted via our assessment request form is retained for as long as necessary to respond to your enquiry and for a reasonable period thereafter in case of follow-up. We do not retain enquiry data for longer than <strong>24 months</strong> from last contact unless we enter into a contractual relationship with you.</p>
+    <p>If you become a client, data related to our engagement is retained in line with our contractual obligations and applicable legal requirements, typically for <strong>6 years</strong> following the end of the engagement.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>6. Your Rights Under UK GDPR</h2>
+    <p>You have the following rights in relation to your personal data:</p>
+    <ul>
+      <li><strong>Right of access</strong> — you can request a copy of the personal data we hold about you</li>
+      <li><strong>Right to rectification</strong> — you can ask us to correct inaccurate data</li>
+      <li><strong>Right to erasure</strong> — you can ask us to delete your data in certain circumstances</li>
+      <li><strong>Right to restrict processing</strong> — you can ask us to limit how we use your data</li>
+      <li><strong>Right to data portability</strong> — you can request your data in a machine-readable format</li>
+      <li><strong>Right to object</strong> — you can object to processing based on legitimate interests</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at <a href="mailto:notices@nova-blue.com">notices@nova-blue.com</a>. We will respond within 30 days.</p>
+    <p>You also have the right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong> at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a> if you believe your data has been handled unlawfully.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>7. Data Security</h2>
+    <p>We take appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure. As a cybersecurity company, security is fundamental to how we operate — not an afterthought.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The date at the top of this page will always reflect the most recent version. Significant changes will be communicated where we have a means to do so.</p>
+  </div>
+
+  <div class="policy-section">
+    <h2>9. Contact</h2>
+    <p>For any privacy-related queries, please write to us at:</p>
+    <p><strong>Nova Blue Technologies Ltd</strong><br>
+    Email: <a href="mailto:notices@nova-blue.com">notices@nova-blue.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <div class="footer-copy">&#169; 2026 Nova Blue Technologies Ltd &middot; Registered in England &amp; Wales &middot; All rights reserved</div>
+    <div class="footer-badges">
+      <img src="images/ads-logo.png" alt="ADS Group Member" class="ads-logo">
+      <iframe src="https://registry.blockmarktech.com/certificates/bd6f5ddd-daf0-489c-85e8-5fd9451631fc/widget/?tooltip_position=bottom_right&theme=transparent&hover=t" style="border:none;height:132px;width:132px;"></iframe>
+      <iframe src="https://registry.blockmarktech.com/certificates/9a771ed3-7390-4826-bae6-539775e567a6/widget/?tooltip_position=bottom_right&theme=transparent&hover=t" style="border:none;height:132px;width:132px;"></iframe>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to understand how visitors use our site and to improve your experience. You can accept or decline non-essential cookies. See our <a href="/privacy-policy">Privacy Policy</a> for details.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-decline" onclick="setCookieConsent('declined')">Decline</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="setCookieConsent('accepted')">Accept</button>
+  </div>
+</div>
+
+<script>
+function setCookieConsent(value){
+  localStorage.setItem('nb_cookie_consent',value);
+  document.getElementById('cookie-banner').classList.remove('visible');
+}
+if(!localStorage.getItem('nb_cookie_consent')){
+  setTimeout(()=>document.getElementById('cookie-banner').classList.add('visible'),1200);
+}
+</script>
+</body>
+</html>
