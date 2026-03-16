@@ -48,6 +48,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .stat-number{font-family:var(--display);font-size:2.8rem;color:var(--white);letter-spacing:.03em}
 .stat-number span{color:var(--accent)}
 .stat-label{font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;color:var(--dim);text-transform:uppercase;margin-top:.2rem}
+.stat-source{font-family:var(--mono);font-size:.55rem;letter-spacing:.08em;color:var(--dim);opacity:.5;margin-top:.4rem}
+.stat-source a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.15)}
+.stat-source a:hover{opacity:1;color:var(--accent)}
 .ticker{background:var(--accent);padding:.6rem 0;overflow:hidden}
 .ticker-track{display:flex;animation:ticker 30s linear infinite;width:max-content}
 .ticker-item{font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--black);font-weight:500;white-space:nowrap;padding:0 3rem}
@@ -213,10 +216,10 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:4rem}
     <!--<a href="#compliance" style="font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#c0392b;text-decoration:none;border:1px solid rgba(192,57,43,.4);padding:.3rem .8rem;align-self:flex-start">Review Requirements →</a>-->
   </div>
   <div class="hero-stats">
-    <div><div class="stat-number">68<span>%</span></div><div class="stat-label">of defence SMEs lack<br>adequate cyber posture</div></div>
-    <div><div class="stat-number">£4.2<span>M</span></div><div class="stat-label">average cost of an<br>IP breach in defence</div></div>
-    <div><div class="stat-number">72<span>H</span></div><div class="stat-label">median time before<br>breach detection</div></div>
-    <div><div class="stat-number">94<span>%</span></div><div class="stat-label">of attacks exploit<br>known vulnerabilities</div></div>
+    <div><div class="stat-number">3<span>,000+</span></div><div class="stat-label">SMEs in the UK<br>defence supply chain</div><div class="stat-source"><a href="https://www.adsgroup.org.uk/facts-figures/adsdefenceoutlook2025/" target="_blank" rel="noopener">ADS Defence Outlook 2025</a></div></div>
+    <div><div class="stat-number">43<span>%</span></div><div class="stat-label">of UK businesses hit<br>by cyberattack last year</div><div class="stat-source"><a href="https://www.gov.uk/government/statistics/cyber-security-breaches-survey-2025/cyber-security-breaches-survey-2025" target="_blank" rel="noopener">DSIT Breaches Survey 2025</a></div></div>
+    <div><div class="stat-number">£3.29<span>M</span></div><div class="stat-label">average cost of a<br>UK data breach</div><div class="stat-source"><a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener">IBM Cost of a Data Breach 2025</a></div></div>
+    <div><div class="stat-number">60<span>%</span></div><div class="stat-label">of breaches linked to<br>unpatched vulnerabilities</div><div class="stat-source"><a href="https://www.rapid7.com/blog/post/2024/12/16/2024-threat-landscape-statistics-ransomware-activity-vulnerability-exploits-and-attack-trends/" target="_blank" rel="noopener">Rapid7 Threat Landscape 2024</a></div></div>
   </div>
 </section>
 
@@ -262,12 +265,6 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:4rem}
       <div class="service-body">We design, build, and operate your cyber security capabilities end-to-end. We harden your networks, devices and identities — then our UK-based, 24/7 security team delivers around-the-clock protection. No tool sprawl. No part-time CISO. Just security that actually runs.</div>
       <div class="service-tags"><span class="tag">24/7 SOC</span><span class="tag">Hardening</span><span class="tag">Incident Response</span><span class="tag">Posture Management</span></div>
     </div>
-  </div>
-  <div style="margin-top:3rem;padding:2rem 2.5rem;background:var(--panel);border-left:3px solid var(--accent);max-width:680px" class="reveal">
-    <div class="section-label" style="margin-bottom:.75rem">// Free — No Obligation</div>
-    <div style="font-family:var(--display);font-size:1.4rem;letter-spacing:.05em;color:var(--white);margin-bottom:.75rem">START WITH VANGUARD</div>
-    <p style="font-size:.9rem;color:var(--dim);line-height:1.7;margin-bottom:1.25rem">If you're on Microsoft 365, our free VANGUARD service gives you instant clarity on your security posture. We review your tenant configuration, highlight weaknesses, and show you exactly where your setup falls short — no jargon, no commitment.</p>
-    <a href="https://links.growably.com/widget/bookings/novabluevanguard" target="_blank" class="btn-primary" style="display:inline-flex">Book a Free VANGUARD Review <span style="margin-left:.5rem">→</span></a>
   </div>
 </section>
 
@@ -382,7 +379,7 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:4rem}
       <p class="section-body" style="margin-bottom:3rem">Book a free 45-minute Threat &amp; Compliance Assessment. We'll review your current posture, identify your most critical gaps, and give you a clear view of what you need — with no obligation to proceed.</p>
       <div class="benefit-item">
         <div class="benefit-icon-wrap">&#128737;</div>
-        <div><div class="benefit-title">Current Threat Exposure Review</div><div class="benefit-body">We assess your attack surface and identify the specific threats most relevant to your technology and sector position.</div></div>
+        <div><div class="benefit-title">Microsoft 365 Security Review</div><div class="benefit-body">If you're on Microsoft 365, our free VANGUARD service gives you instant clarity on your security posture. We review your tenant configuration, highlight weaknesses, and show you exactly where your setup falls short — no jargon, no commitment.</div></div>
       </div>
       <div class="benefit-item">
         <div class="benefit-icon-wrap">&#128203;</div>
